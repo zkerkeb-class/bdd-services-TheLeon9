@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-// GET : http://localhost:3000/user
+// GET : http://localhost:3500/user
 export const getUser = async (req, res) => {
   try {
     const users = await prisma.user.findMany();
@@ -14,7 +14,7 @@ export const getUser = async (req, res) => {
   }
 };
 
-// PUT : http://localhost:3000/user/:id
+// PUT : http://localhost:3500/user/:id
 // {
 //     "lastName": "Moracchini",
 //     "firstName": "Florian",

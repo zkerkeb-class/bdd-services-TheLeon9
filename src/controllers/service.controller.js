@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-// GET : http://localhost:3000/services
+// GET : http://localhost:3500/services
 export const getServices = async (req, res) => {
   try {
     const services = await prisma.service.findMany();
@@ -14,7 +14,7 @@ export const getServices = async (req, res) => {
   }
 };
 
-// POST : http://localhost:3000/services
+// POST : http://localhost:3500/services
 // {
 //     "title": "Test",
 //     "description": "Test",
@@ -32,7 +32,7 @@ export const createService = async (req, res) => {
   }
 };
 
-// DELETE : http://localhost:3000/services/:id
+// DELETE : http://localhost:3500/services/:id
 export const deleteService = async (req, res) => {
   const { id } = req.params;
   try {

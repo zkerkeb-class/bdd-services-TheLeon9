@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-// GET : http://localhost:3000/skills
+// GET : http://localhost:3500/skills
 export const getSkills = async (req, res) => {
   try {
     const skills = await prisma.skill.findMany();
@@ -14,7 +14,7 @@ export const getSkills = async (req, res) => {
   }
 };
 
-// POST : http://localhost:3000/skills
+// POST : http://localhost:3500/skills
 // {
 //     "value": "ThreeJS"
 // }
@@ -28,7 +28,7 @@ export const createSkill = async (req, res) => {
   }
 };
 
-// DELETE : http://localhost:3000/skills/:id
+// DELETE : http://localhost:3500/skills/:id
 export const deleteSkill = async (req, res) => {
   const { id } = req.params;
   try {

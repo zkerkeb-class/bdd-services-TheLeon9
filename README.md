@@ -53,14 +53,14 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : GET
-    - **URL** : `http://localhost:3000/user`
+    - **URL** : `http://localhost:3500/user`
     - **Headers** : `Authorization: Bearer <token>`
 
 - **PUT /user/:id** : Updates the user's information based on the specified ID.
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : PUT
-    - **URL** : `http://localhost:3000/user/1`
+    - **URL** : `http://localhost:3500/user/1`
     - **Headers** : `Authorization: Bearer <token>`
     - **Body** : `{ "firstName": "John", "lastName": "Doe", "email": "john.doe@example.com" }`
 
@@ -71,7 +71,7 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : GET
-    - **URL** : `http://localhost:3000/skills`
+    - **URL** : `http://localhost:3500/skills`
     - **Headers** : `Authorization: Bearer <token>`
 
 - **POST /skills** : Creates a new skill.
@@ -79,7 +79,7 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : POST
-    - **URL** : `http://localhost:3000/skills`
+    - **URL** : `http://localhost:3500/skills`
     - **Headers** : `Authorization: Bearer <token>`
     - **Body** : `{ "value": "JavaScript" }`
 
@@ -87,7 +87,7 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : DELETE
-    - **URL** : `http://localhost:3000/skills/1`
+    - **URL** : `http://localhost:3500/skills/1`
     - **Headers** : `Authorization: Bearer <token>`
 
 ### Service Routes (`/services`)
@@ -97,7 +97,7 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : GET
-    - **URL** : `http://localhost:3000/services`
+    - **URL** : `http://localhost:3500/services`
     - **Headers** : `Authorization: Bearer <token>`
 
 - **POST /services** : Creates a new service.
@@ -105,7 +105,7 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : POST
-    - **URL** : `http://localhost:3000/services`
+    - **URL** : `http://localhost:3500/services`
     - **Headers** : `Authorization: Bearer <token>`
     - **Body** : `{ "title": "Consultation", "description": "Conseil sur le développement web", "price": 100.00 }`
 
@@ -113,7 +113,7 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : DELETE
-    - **URL** : `http://localhost:3000/services/1`
+    - **URL** : `http://localhost:3500/services/1`
     - **Headers** : `Authorization: Bearer <token>`
 
 ### Project Routes (`/projects`)
@@ -123,7 +123,7 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : GET
-    - **URL** : `http://localhost:3000/projects`
+    - **URL** : `http://localhost:3500/projects`
     - **Headers** : `Authorization: Bearer <token>`
 
 - **POST /projects** : Creates a new project.
@@ -131,7 +131,7 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : POST
-    - **URL** : `http://localhost:3000/projects`
+    - **URL** : `http://localhost:3500/projects`
     - **Headers** : `Authorization: Bearer <token>`
     - **Body** :
     ```
@@ -152,7 +152,7 @@ DATABASE_URL="file:./dev.db"
   - Authentification : Requires a valid token.
   - Postman Example:
     - **Method** : DELETE
-    - **URL** : `http://localhost:3000/projects/1`
+    - **URL** : `http://localhost:3500/projects/1`
     - **Headers** : `Authorization: Bearer <token>`
 
 ---

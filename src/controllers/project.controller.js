@@ -1,7 +1,7 @@
 import { PrismaClient } from "@prisma/client";
 const prisma = new PrismaClient();
 
-// GET : http://localhost:3000/projects
+// GET : http://localhost:3500/projects
 export const getProjects = async (req, res) => {
   try {
     const projects = await prisma.project.findMany();
@@ -14,7 +14,7 @@ export const getProjects = async (req, res) => {
   }
 };
 
-// POST : http://localhost:3000/projects
+// POST : http://localhost:3500/projects
 // {
 //   "projectNumber": 1,
 //   "title": "Elementary Lions",
@@ -36,7 +36,7 @@ export const createProject = async (req, res) => {
   }
 };
 
-// DELETE : http://localhost:3000/projects/:id
+// DELETE : http://localhost:3500/projects/:id
 export const deleteProject = async (req, res) => {
   const { id } = req.params;
   try {
