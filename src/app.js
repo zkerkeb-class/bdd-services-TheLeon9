@@ -6,6 +6,7 @@ import { projectRouter } from "./routes/project.routes.js";
 import { serviceRouter } from "./routes/service.route.js";
 import { skillRouter } from "./routes/skill.routes.js";
 import { userRouter } from "./routes/user.routes.js";
+import { constantRouter } from "./routes/constant.routes.js";
 
 import { initDefaultUser } from "./utils/initUser.js";
 
@@ -19,6 +20,7 @@ app.use("/user", userRouter);
 app.use("/projects", projectRouter);
 app.use("/skills", skillRouter);
 app.use("/services", serviceRouter);
+app.use("/constants", constantRouter);
 
 initDefaultUser();
 
